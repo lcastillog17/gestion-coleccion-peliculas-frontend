@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gestión de Colección de Películas</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Gestión de Colección de Películas</h1>
+
+      <!-- Formulario para agregar una nueva película -->
+      <h2>Guardar Película</h2>
+      <form id="addMovieForm">
+        <input type="text" id="id" hidden />
+
+        <label for="title">Título:</label>
+        <input type="text" id="title" required /><br />
+
+        <label for="director">Director:</label>
+        <input type="text" id="director" required><br />
+
+        <label for="releaseYear">Año de Estreno:</label>
+        <input type="number" id="releaseYear" /><br />
+
+        <label for="genre">Género:</label>
+        <input type="text" id="genre" /><br />
+
+        <label for="description">Descripción:</label>
+        <textarea id="description" ></textarea><br />
+
+        <label for="language">Idioma:</label>
+        <input type="text" id="language" /><br />
+
+        <label for="duration">Duración (minutos):</label>
+        <input type="number" id="duration" /><br />
+
+        <label for="posterImage">URL del Póster:</label>
+        <input type="text" id="posterImage" /><br />
+
+        <button type="submit">Guardar Película</button>
+      </form>
+
+      <!-- Lista de películas existentes -->
+      <h2>Lista de Películas</h2>
+      <ul id="movieList"></ul>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
